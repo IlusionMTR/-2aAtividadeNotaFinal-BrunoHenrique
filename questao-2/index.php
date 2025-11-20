@@ -73,6 +73,20 @@
 
 </div>
 
+<script>
+
+window.onload = function () {
+    const itens = document.querySelectorAll(".item");
+    itens.forEach((item, index) => {
+        setTimeout((0.5) => {
+            item.style.opacity = "1";
+            item.style.transform = "translateY(0)";
+        }, index * 120);
+    });
+};
+
+</script>
+
 <style>
 
 * {
