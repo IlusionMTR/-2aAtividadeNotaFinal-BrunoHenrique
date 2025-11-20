@@ -1,1 +1,3 @@
-Não entendi onde eu iria adicionar os scripts, mas é isso
+Aluno: Bruno Henrique Silva de Sousa 
+Matrícula: 202508173001
+Turma: Semi-presencial
