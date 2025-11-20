@@ -15,13 +15,13 @@
 
 <form action="add_book.php" method="post">
     <label>Título:</label>
-    <input type="text" name="titulo" required><br><br>
+    <input type="text" name="titulo" required> <br><br>
 
     <label>Autor:</label>
-    <input type="text" name="autor" required><br><br>
+    <input type="text" name="autor" required> <br><br>
 
     <label>Ano:</label>
-    <input type="date" name="ano" required><br><br>
+    <input type="date" name="ano" required> <br><br>
 
     <button type="submit">Adicionar</button>
 </form>
@@ -47,6 +47,23 @@ while ($linha = $resultado->fetch_assoc()) {
 ?>
 
 <div>
+
+<script>
+
+document.getElementById("formLivro").addEventListener("submit", function(e) {
+    const titulo = document.getElementById("titulo").value.trim();
+    const autor = document.getElementById("autor").value.trim();
+    const ano = document.getElementById("ano").value;
+
+    if (titulo === "" || autor === "" || ano === "") {
+        alert("Preencha este campo.");
+        e.preventDefault();
+    } else {
+        alert("Livro adicionado com sucesso!");
+    }
+});
+
+</script>
 
 <style>
 
